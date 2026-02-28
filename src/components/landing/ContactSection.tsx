@@ -66,8 +66,8 @@ export const ContactSection = () => {
                                 <div>
                                     <h4 className="font-bold text-foreground uppercase tracking-wider mb-2">Email</h4>
                                     <p className="text-muted-foreground font-medium">
-                                        train@ozonemma.com<br />
-                                        info@ozonemma.com
+                                        train@antigravitydemo.com<br />
+                                        info@antigravitydemo.com
                                     </p>
                                 </div>
                             </motion.div>
@@ -95,6 +95,21 @@ export const ContactSection = () => {
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <input type="tel" placeholder="Phone Number" className="w-full px-6 py-4 bg-background border border-border text-foreground placeholder-muted-foreground rounded-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" />
                                 <input type="text" placeholder="Subject" className="w-full px-6 py-4 bg-background border border-border text-foreground placeholder-muted-foreground rounded-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" />
+                            </div>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <select className="w-full px-6 py-4 bg-background border border-border text-muted-foreground rounded-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Preferred Training Time</option>
+                                    <option value="morning">Morning (6AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                                    <option value="evening">Evening (4PM - 10PM)</option>
+                                    <option value="any">Any Time</option>
+                                </select>
+                                <select className="w-full px-6 py-4 bg-background border border-border text-muted-foreground rounded-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Age Group</option>
+                                    <option value="kids">Kids (7-12)</option>
+                                    <option value="teens">Teens (13-17)</option>
+                                    <option value="adults">Adults (18+)</option>
+                                </select>
                             </div>
                             <textarea placeholder="Your Message" rows={5} className="w-full px-6 py-4 bg-background border border-border text-foreground placeholder-muted-foreground rounded-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"></textarea>
                             <button type="button" className="w-full py-4 bg-primary text-primary-foreground font-bold uppercase tracking-wider rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_15px_rgba(211,47,47,0.3)] hover:shadow-[0_0_25px_rgba(211,47,47,0.6)]">

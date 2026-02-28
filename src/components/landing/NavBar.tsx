@@ -36,7 +36,7 @@ export const NavBar = () => {
                     <div className="w-8 h-8 bg-primary rounded-sm flex items-center justify-center transform -skew-x-12">
                         <span className="text-primary-foreground text-lg leading-none skew-x-12">M</span>
                     </div>
-                    Ozone<span className="text-primary">MMA</span>
+                    Antigravity<span className="text-primary">MMA</span>
                 </div>
                 <div className="hidden md:flex gap-8 text-sm font-semibold tracking-wide text-muted-foreground mr-auto ml-12">
                     <a href="#programs" className="hover:text-primary hover:text-foreground transition-colors">PROGRAMS</a>

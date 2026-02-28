@@ -7,12 +7,12 @@ export const Footer = () => {
                     <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center transform -skew-x-12">
                         <span className="text-primary-foreground text-xl leading-none skew-x-12">M</span>
                     </div>
-                    Ozone<span className="text-primary">MMA</span>
+                    Antigravity<span className="text-primary">MMA</span>
                 </div>
 
                 {/* Copyright */}
                 <p className="text-background/70 font-medium text-center md:text-left">
-                    &copy; {new Date().getFullYear()} Ozone MMA. All rights reserved.
+                    &copy; {new Date().getFullYear()} Antigravity MMA. All rights reserved. (Demo)
                 </p>
             </div>
         </footer>
