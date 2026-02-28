@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* LIGHT MODE: White and its shades */
+    --color-background: #ffffff;
+    --color-foreground: #000000;
+    --color-muted: #f4f4f5;
+    --color-muted-foreground: #71717a;
+    --color-border: #e4e4e7;
+
+    /* BRAND COLOR: MMA Red */
+    --color-primary: #D32F2F;
+    --color-primary-foreground: #ffffff;
+
+    --color-card: #fcfcfc;
+    --color-card-foreground: #000000;
+  }
+
+  .dark {
+    /* DARK MODE: Black and its shades */
+    --color-background: #000000;
+    --color-foreground: #ffffff;
+    --color-muted: #111111;
+    --color-muted-foreground: #a1a1aa;
+    --color-border: #222222;
+
+    /* BRAND COLOR: MMA Red */
+    --color-primary: #D32F2F;
+    --color-primary-foreground: #ffffff;
+
+    --color-card: #0a0a0a;
+    --color-card-foreground: #ffffff;
+  }
+}
+
+@theme {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-card: var(--color-card);
+  --color-card-foreground: var(--color-card-foreground);
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased selection:bg-primary selection:text-primary-foreground;
+  }
+}
